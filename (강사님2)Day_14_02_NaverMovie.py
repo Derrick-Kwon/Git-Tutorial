@@ -48,6 +48,7 @@ def clean_str(string):
 
 def save_model():
     x_train, y_train = get_xy('data/ratings_train.txt')
+
     x_test, y_test = get_xy('data/ratings_test.txt')
 
     # 퀴즈
@@ -147,5 +148,5 @@ def load_model():
         print(p[0, 0], ' '.join(tokens[:i]))
 
 
-# save_model()
-load_model()
+save_model()
+# load_model()
